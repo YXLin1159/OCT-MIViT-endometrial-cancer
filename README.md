@@ -21,21 +21,21 @@ Early endometrial neoplasia can often be missed by macroscopic imaging or blind 
 The proposed model is based on a **Vision Transformer (ViT)** backbone with a **multi-instance learning (MIL) pooling mechanism** that aggregates information across B-scans within each volumetric OCT scan. The model incorporates a auxiliary contrastive-clustering loss to facilitate learning of focal lesions. Clinical metadata (e.g., age, menopausal status) can be integrated as conditioning tokens.
 
 <p align="center">
-  <img src="docs/images/mivit_structure.png" alt="OCT-MIViT Model Structure" width="700"/>
+  <img src="docs/images/mivit_structure.png" alt="OCT-MIViT Model Structure" width="600"/>
 </p>
 
 ## Model performance
 The model achieves strong performance in distinguishing **benign vs. malignant endometrial lesions** on held-out test sets.  
 
 <p align="center">
-  <img src="docs/images/mivit_performance.png" alt="Model Performance: ROC and Confusion Matrix" width="700"/>
+  <img src="docs/images/mivit_performance.png" alt="Model Performance: ROC and Confusion Matrix" width="600"/>
 </p>
 
 ## Model interpretation
 Attention-based instance-level visualization highlights **suspicious cancer regions** within OCT volumes, aiding interpretability and potential clinical deployment.
 
 <p align="center">
-  <img src="docs/images/mivit_interp.png" alt="Model Interpretation Examples" width="700"/>
+  <img src="docs/images/mivit_interp.png" alt="Model Interpretation Examples" width="600"/>
 </p>
 
 - Regions with higher attention scores correspond to **cancer-suspicious areas**, while normal regions show consistent low attention.  
