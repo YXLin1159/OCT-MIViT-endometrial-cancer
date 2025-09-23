@@ -40,7 +40,7 @@ Attention-based instance-level visualization highlights **suspicious cancer regi
 - Regions with higher attention scores correspond to **cancer-suspicious areas**, while normal regions show consistent low attention.  
 - This provides clinicians with an intuitive way to verify model decisions.  
 
-
+## Getting started
 ```bash
 git clone https://github.com/YXLin1159/OCT-MIViT-endometrial-cancer.git
 cd OCT-MIViT-endometrial-cancer
