@@ -1,0 +1,41 @@
+name: oct-mivit
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pillow
+  - pytest
+  - jupyterlab
+  - notebook
+  - pip:
+    # Core ML / vision libs
+    - torch
+    - torchvision
+    - timm
+    - transformers
+    - huggingface_hub
+    - safetensors
+
+    # Dimensionality reduction / visualization
+    - umap-learn
+    - scikit-learn
+
+    # Utility libs
+    - tqdm
+    - imageio
+    - einops
+    - pyyaml
+    - opencv-python
+    - pandas
+    - seaborn
+
+    # Optional
+    - notebook
+    - ipython
