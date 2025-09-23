@@ -1,4 +1,4 @@
-from typing import Optional, Sequence
+from typing import Optional
 import numpy as np
 from pathlib import Path
 from sklearn.decomposition import PCA, IncrementalPCA
@@ -25,7 +25,6 @@ def _extract_valid_instances_from_batch(bags: torch.Tensor, mask: torch.Tensor, 
     if not rows:
         return np.empty((0, D), dtype=np.float32)
     return np.concatenate(rows, axis=0)  # (M, D)
-
 
 def compute_pca_from_dataloader(
     dataloader,
