@@ -13,7 +13,8 @@ Early endometrial neoplasia can often be missed by macroscopic imaging or blind 
 - **`embed/`** – Embedding generation and PCA initialization  
 - **`models/`** – Model architectures (OCT-MIL-ViT and variants)  
 - **`train/`** – Training, evaluation, and testing scripts  
-- **`loss/`** – Custom loss functions  
+- **`loss/`** – Custom loss functions
+- **`artifacts/`** - Temp data
 - **`docs/images/`** – Figures for model illustration and results
 
 ## Model architecture
